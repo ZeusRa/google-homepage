@@ -1,9 +1,24 @@
 html{
-    font-family: Arial, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 
-a{
+body{
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+a, p{
     color: rgba(0, 0, 0, 0.87);
     text-decoration: none;
 }
@@ -23,7 +38,7 @@ ul {
     float: right;
 }
 
-.navTop li a{
+.navTop li a , .navBottom li a{
     display: block;
     padding: 8px;
 }
@@ -53,7 +68,7 @@ ul {
 
 .main{
     position: absolute;
-    margin: 250 auto;
+    margin: 250 auto 0 auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -66,10 +81,47 @@ ul {
     text-align: center; 
 }
 
-input [type=text]{
+input[name="search"]{
+    border-color: transparent;
+    color:  rgba(0, 0, 0, 0.87);
     padding: 12px 20px;
     margin: 8px 0;
+    width: 500px;
     box-sizing: border-box;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 }
 
+input[name="search"]:focus , input[name="search"]:hover{
+    border-color:  transparent;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.50);
+}
+
+input[type="submit"] , input[type="button"]{
+    background-color: #f2f2f2;
+    color: #757575;
+    border: none;
+    width: 100px auto;
+    margin: 10px 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover , input[type="button"]:hover{
+    color: rgba(0, 0, 0, 0.87);
+}
+
+footer{
+    background-color: #f2f2f2;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.country p{
+    display: block;
+    padding: 2px 8px;
+}
 
