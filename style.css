@@ -1,0 +1,75 @@
+html{
+    font-family: Arial, sans-serif;
+}
+
+
+a{
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navTop li{
+    float: right;
+}
+
+.navTop li a{
+    display: block;
+    padding: 8px;
+}
+
+.googleApps{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.session{
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    text-align: left;
+}
+
+.session a{
+    font-weight: bold;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.main{
+    position: absolute;
+    margin: 250 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    text-align: center; 
+}
+
+input [type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
